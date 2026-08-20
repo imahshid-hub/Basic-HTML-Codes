@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <h1>please fill out the <span style="color:brown">form</h1>
+            <form action="/submit" method="get" >
+                <fieldset>
+                    <legend>Personal info</legend>
+                <table>
+                <tr>
+                <td><label for="username">username:</label></td>
+                <td><input type="text" id="username" placeholder="enter your name" value="mahshid"><br><br></td>
+                </tr>
+               
+                <tr>
+                <td><label for="password">password:</label></td>
+                <td><input type="password" id="password" placeholder="enter your password" required minlength="8" maxlength="12"><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="email">e-mail:</label></td>
+                <td><input type="email" id="email" placeholder="enter your e-mail" disabled><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="age">age:</label></td>
+                <td><input type="number" id="age" min="1" max="100" placeholder="enter your age" required><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="date">date:</label></td>
+                <td><input type="date" id="date" required><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="time">time:</label></td>
+                <td><input type="time" id="time" required><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="color">pick a color:</label></td>
+                <td><input type="color" id="color"><br><br></td>
+                </tr>
+                <tr>
+                <td><label for="file">upload your photo:</label></td>
+                <td><input type="file" id="file" required><br><br></td>
+                </tr>
+                </table>
+                </fieldset>
+                 ------------------------------
+                 <fieldset>
+                    <legend>hobbies</legend>
+                <p>what are your hobbies?</p>
+                <label for="checkbox">programming</label>
+                <input type="checkbox" id="checkbox"><br><br>
+                <label for="checkbox">drawing</label>
+                <input type="checkbox" id="checkbox"><br><br>
+                <label for="checkbox">volleyball</label>
+                <input type="checkbox" id="checkbox"><br><br>
+                </fieldset>
+                 ------------------------------
+                 <fieldset>
+                    <legend>gender</legend>
+                <p>what is your gender?</p>
+                <label for="radio">male</label>
+                <input type="radio" id="radio" name="gender"><br><br>
+                <label for="radio">female</label>
+                <input type="radio" id="radio" name="gender"><br><br>
+                 </fieldset>
+                ------------------------------<br>
+                <fieldset>
+                    <legend>country</legend>
+                <label for="country">country:</label>
+                <select id="country" name="country">
+                    <option>England</option>
+                    <option selected>Iran</option>
+                    <option>Australia</option>
+                    <option>America</option>
+                </select><br><br>
+                </fieldset>
+                ------------------------------<br>
+                <fieldset>
+                    <legend>message</legend>
+                <label for="message">message:</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea><br><br>
+                </fieldset>
+                ------------------------------
+                <button type="reset">login</button>
+            </form>
+    </body>
+</html>
